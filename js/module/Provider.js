@@ -26,7 +26,7 @@ export function Provider(customOptions)
      * Manage the request of the exchange rates
      */
     function loadExchangeRates() {
-        let url = resolveUrl() + '/latest' + '?acces_key=' + options.apiKey;
+        let url = resolveUrl() + '/latest' + '?access_key=' + options.apiKey;
 
         fetch(url)
             .then(function(response) {
@@ -43,7 +43,7 @@ export function Provider(customOptions)
      * Manage the request of the currencies
      */
     function loadCurrencies() {
-        let url = resolveUrl() + '/symbols' + '?acces_key=' + options.apiKey;
+        let url = resolveUrl() + '/symbols' + '?access_key=' + options.apiKey;
 
         fetch(url)
             .then(function(response) {
