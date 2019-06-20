@@ -1,8 +1,8 @@
-import { Amount } from './Amount.js';
-import { Converter } from './Converter.js';
-import { ExchangeRates } from './ExchangeRates.js';
-import { Provider } from './Provider.js';
-import { sanitize, format } from './Utils.js';
+import { Amount } from './module/Amount.js';
+import { Converter } from './module/Converter.js';
+import { ExchangeRates } from './module/ExchangeRates.js';
+import { Provider } from './module/Provider.js';
+import { sanitize, format } from './module/Utils.js';
 
 (function() {
     let euroInput = document.getElementById('euro-input');
